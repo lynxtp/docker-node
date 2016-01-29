@@ -8,4 +8,4 @@ RUN curl -sL -o /tmp/node.tar.gz https://nodejs.org/dist/v5.4.0/node-v5.4.0-linu
     && tar --strip-components=1 -C /opt/node -xf /tmp/node.tar.gz \
     && rm -f /tmp/node.tar.gz
 
-ENTRYPOINT ["/opt/node/bin/node"]
+CMD ["node"]
