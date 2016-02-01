@@ -2,6 +2,6 @@
 # -*- coding: utf-8; mode: sh -*-
 CONTAINER=lynxtp/node
 VERSION=5.4.0
-ENTRYPOINT=/opt/node/bin/$(basename $0)
-docker run --rm -i -t -v $PWD:/tmp/workdir -w /tmp/workdir --entrypoint=$ENTRYPOINT $CONTAINER:$VERSION "$@"
+CMD=$(basename $0)
+docker run --rm -i -t -v $PWD:/tmp/workdir -w /tmp/workdir $CONTAINER:$VERSION $CMD "$@"
 exit 0
