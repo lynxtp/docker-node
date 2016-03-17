@@ -1,5 +1,5 @@
 CONTAINER = lynxtp/node
-VERSION = 5.4.0
+VERSION = 5.9.0
 
 DOCKER ?= docker
 
